@@ -5,11 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banking System</title>
+    <title>Bank of Professor</title>
+
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font-sans">
+    <Header>
+        <h1 class="text-center text-5xl italic font-sans mt-6">Welcome To Bank of
+            <span class="font-semibold font-serif text-orange-700">Professor</span>!!!
+        </h1>
+    </Header>
 
+    <main>
+        <section class="bg-blue-300 w-9/12 mx-auto mt-12 p-8 pl-12 rounded-md">
+            <h3 class="text-slate-700 text-3xl font-medium mb-6">Please Login</h3>
+
+            <input class="block mb-4 pl-4 py-2 rounded w-3/5 text-md" type="email" name=""
+                placeholder="Enter Your Email Address" id="user-email">
+            <input class="block mb-4 pl-4 py-2 rounded w-3/5 text-md" type="password" name=""
+                placeholder="Enter Your password" id="user-password">
+            <button id="btn-submit"
+                class="bg-amber-600 text-white px-8 py-2 font-medium text-2xl rounded-lg hover:bg-neutral-500">Submit</button>
+        </section>
+    </main>
+
+    <script src="js/login.js"></script>
 </body>
 
 </html>
