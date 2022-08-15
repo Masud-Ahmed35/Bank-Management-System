@@ -1,5 +1,5 @@
 
-document.getElementById("btn-submit").addEventListener("click", function () {
+document.getElementById("btn-submit").addEventListener('click', function () {
 
     const emailField = document.getElementById("user-email");
     const email = emailField.value;
@@ -8,10 +8,10 @@ document.getElementById("btn-submit").addEventListener("click", function () {
     const password = passwordField.value;
 
     if (email === "masud@gmail.com" && password === "password") {
-        console.log("Valid User");
+        window.location.href = "bank.html";
     }
     else {
-        console.log("Invalid User");
+        alert("Please Enter Correct Email or Password.");
     }
 
 });

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Professor Money</title>
+
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <Header>
+        <h1 class="text-center text-5xl italic font-sans mt-6">Explore The Money of
+            <span class="font-semibold font-serif text-orange-700">Professor</span>!!!
+        </h1>
+    </Header>
+
+    <main>
+        <section class="mt-24 ">
+            <div class="grid grid-cols-3 gap-6 w-9/12 text-white mx-auto">
+                <div class="bg-sky-700 p-7 rounded-lg pl-12">
+                    <h3 class="text-3xl font-sm">Deposit Money</h3>
+                    <h3 class="text-4xl font-medium pt-3">$<span id="deposit-total">00</span></h3>
+                </div>
+                <div class="bg-yellow-600 p-7 rounded-lg pl-12">
+                    <h3 class="text-3xl font-sm">Withdraw Money</h3>
+                    <h3 class="text-4xl font-medium pt-3">$<span id="withdraw-total">00</span></h3>
+                </div>
+                <div class="bg-green-700 p-7 rounded-lg pl-12">
+                    <h3 class="text-3xl font-sm">Main Balance</h3>
+                    <h3 class="text-4xl font-medium pt-3">$<span id="main-balance">1240</span></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit and Withdraw Section -->
+        <section class="mt-20">
+            <div class="grid grid-cols-2 gap-6 w-9/12 mx-auto">
+                <div class="bg-purple-700 p-7 rounded-lg pl-12">
+                    <h3 class="text-3xl font-sm mb-6  text-white">Deposit Money</h3>
+                    <input class="block mb-4 pl-4 py-2 rounded w-3/5 text-md font-sm" type="text" name=""
+                        placeholder="$ Amount Want to Deposit" id="deposit-field">
+                    <button id="btn-deposit"
+                        class="bg-amber-600 text-white px-8 py-2 font-medium text-2xl rounded-lg hover:bg-neutral-500">Deposit</button>
+                </div>
+                <div class="bg-pink-700 p-7 rounded-lg pl-12">
+                    <h3 class="text-3xl font-sm mb-6  text-white">Withdraw Money</h3>
+                    <input class="block mb-4 pl-4 py-2 rounded w-3/5 text-md  font-sm" type="text" name=""
+                        placeholder="$ Amount Want to Withdraw" id="withdraw-field">
+                    <button id="btn-withdraw"
+                        class="bg-amber-600 text-white px-8 py-2 font-medium text-2xl rounded-lg hover:bg-neutral-500">Withdraw</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/login.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
